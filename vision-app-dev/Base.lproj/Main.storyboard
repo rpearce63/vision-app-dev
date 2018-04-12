@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,21 +11,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CameraVC" customModule="vision_app_dev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyD-4E-0AP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.74901960779999999" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AaS-4X-6Zb" customClass="RoundedShadowView" customModule="vision_app_dev" customModuleProvider="target">
-                                <rect key="frame" x="20" y="50" width="335" height="60"/>
+                                <rect key="frame" x="20" y="50" width="560" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DRp-Nl-uQR">
-                                        <rect key="frame" x="8" y="8" width="319" height="44"/>
+                                        <rect key="frame" x="8" y="8" width="544" height="44"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The names of items captued will appear here." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0fY-Bl-RsD">
-                                                <rect key="frame" x="0.0" y="0.0" width="319" height="30"/>
+                                                <rect key="frame" x="83" y="0.0" width="378.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="4HB-dF-Vov"/>
                                                 </constraints>
@@ -38,7 +34,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIDENCE: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-XF-DpC">
-                                                <rect key="frame" x="123.5" y="30" width="72" height="14"/>
+                                                <rect key="frame" x="236" y="30" width="72" height="14"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -57,7 +53,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAb-ez-n6D" customClass="RoundedShadowImageView" customModule="vision_app_dev" customModuleProvider="target">
-                                <rect key="frame" x="276" y="519" width="79" height="128"/>
+                                <rect key="frame" x="501" y="452" width="79" height="128"/>
                                 <color key="backgroundColor" red="0.77954715490341187" green="0.92670100927352905" blue="0.63476866483688354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="4m6-ko-cVz"/>
@@ -65,7 +61,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfV-3r-iTB" customClass="RoundedShadowButton" customModule="vision_app_dev" customModuleProvider="target">
-                                <rect key="frame" x="20" y="615" width="85" height="32"/>
+                                <rect key="frame" x="20" y="548" width="85" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="4dY-Is-apn"/>
@@ -95,7 +91,7 @@
                     <connections>
                         <outlet property="cameraView" destination="CyD-4E-0AP" id="YgW-FZ-nQy"/>
                         <outlet property="captureImageView" destination="PAb-ez-n6D" id="1oO-lf-2Mk"/>
-                        <outlet property="confideneLbl" destination="Jhe-XF-DpC" id="XV3-bP-Eah"/>
+                        <outlet property="confidenceLbl" destination="Jhe-XF-DpC" id="XV3-bP-Eah"/>
                         <outlet property="flashBtn" destination="XfV-3r-iTB" id="YyY-5v-Wnx"/>
                         <outlet property="identificationLbl" destination="0fY-Bl-RsD" id="pyN-4t-kcj"/>
                         <outlet property="roundedLblView" destination="AaS-4X-6Zb" id="yHM-2w-osL"/>
